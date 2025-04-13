@@ -4,9 +4,7 @@
             placeholder="Search for Meals " @change="searchMeals">
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-5 px-8">
-        <MealItem v-for="meal of meals" :key="meal.idMeal" :meal="meal">
-           
-        </MealItem>
+        <MealItem v-for="meal of meals" :key="meal.idMeal" :meal="meal"/>      
     </div>
 </template>
 <script setup>
