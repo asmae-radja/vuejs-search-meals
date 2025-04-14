@@ -23,7 +23,6 @@ const meals = computed(() => store.state.mealsByLetter);
 
 watch(route, () => {
     store.dispatch('searchMealsByLetter', route.params.letter)
-
 })
 
 onMounted(() => {
